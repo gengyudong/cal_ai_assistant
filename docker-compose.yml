@@ -1,0 +1,15 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: docker/Dockerfile
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - CAL_API_KEY=${CAL_API_KEY}
+      - CAL_BASE_URL=${CAL_BASE_URL}
+      - CAL_EMAIL=${CAL_EMAIL}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      
