@@ -18,8 +18,8 @@ This project is an interactive chatbot using OpenAI's function calling capabilit
 1. **Clone the repository**:
 
    ```sh
-   git clone cal_ai_assistant
-   cd <repository-directory>
+   git clone https://github.com/gengyudong/cal_ai_assistant.git
+   cd cal_ai_assistant
    ```
 
 2. **Create a `.env` file** in the root directory with the following content:
@@ -40,11 +40,15 @@ This project is an interactive chatbot using OpenAI's function calling capabilit
 
 ### Starting the Frontend
 
-1. **Access the frontend**:
-   Open your web browser and navigate to `http://localhost:8501`.
+1. **Starting the frontend**:
+   ```sh
+   cd cal_ai_assistant/frontend
+   streamlit run app.py
+   ```
 
 2. **Interact with the chatbot**:
    - Use the chat input to ask the chatbot to book a meeting, show your schedule, cancel an event, or reschedule an event.
+   - Use the in-built button on the left sidebar for interactive commands
    - Example prompts:
      - "Help me book a meeting"
      - "Show me my upcoming schedule"
