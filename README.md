@@ -14,6 +14,7 @@ This project is an interactive chatbot using OpenAI's function calling capabilit
 ## Installation
 
 ### Using Docker
+The backend has been containerized using Docker. Follow the steps below to set up the backend:
 
 1. **Clone the repository**:
 
